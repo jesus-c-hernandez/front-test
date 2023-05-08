@@ -1,0 +1,269 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* etiquetas personalizadas */
+
+p {
+  font-size: 25px;
+  line-height: 1.5;
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: -15px;
+  color: rgb(255, 255, 255);
+}
+
+.left h1 {
+  font-size: 80px;
+  margin-top: -50px;
+  color: rgb(255, 255, 255);
+}
+
+.left h2 {
+  font-size: 40px;
+
+  color: rgb(255, 255, 255);
+}
+
+.righttwo h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.description h3 {
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+}
+
+.highlight {
+  color: #2a71db;
+}
+
+/* banner Info */
+.inicio {
+  display: flex;
+  align-items: center;
+  height: 700px;
+  /* background-color: #4b4a4a; */
+
+  /* arriba abajo */
+  /* background: linear-gradient(to top, rgba(0,0,0,0) 0%, rgba(0,0,0,0.75) 90%, rgba(0,0,0,1) 100%), #4b4a4a;  */
+  /* abajo arriba */
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.75) 80%,
+      rgba(0, 0, 0, 1) 100%
+    ),
+    #4b4a4a;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+  height: 100%;
+  padding-left: 150px;
+}
+
+/* efecto imagen */
+.right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.right img {
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+  cursor: zoom-in;
+  width: 420px;
+}
+
+.right img:hover {
+  transform: scale(1.2);
+}
+
+/* Botones */
+/* sin efecto */
+/* .button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  border: none;
+  margin-top: 10px;
+  margin-right: 20px;
+}
+
+.button-filled {
+  background-color: #2a71db;
+  color: white;
+}
+
+.button-border {
+  background-color: transparent;
+  color: #2a71db;
+  border: 2px solid #2a71db;
+} */
+
+.button {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 25px;
+  border: none;
+  margin-top: 10px;
+  margin-right: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-filled {
+  background-color: #2a71db;
+  color: white;
+}
+
+.button-filled:hover {
+  background-color: white;
+  color: black;
+  box-shadow: 0px 0px 10px rgba(42, 113, 219, 0.5);
+}
+
+.button-border {
+  background-color: transparent;
+  color: #2a71db;
+  border: 2px solid #2a71db;
+}
+
+.button-border:hover {
+  background-color: #2a71db;
+  color: white;
+  box-shadow: 0px 0px 10px rgba(42, 113, 219, 0.5);
+}
+
+/* Banner About me  */
+
+.aboutme {
+  height: 400px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+.aboutme p {
+  color: white;
+  font-size: 30px;
+  margin-top: 35px;
+}
+
+/* Banner Skills  */
+
+.skills {
+  height: 450px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-top: 50px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: 200px;
+  margin-bottom: 10px;
+}
+
+.description {
+  color: white;
+  text-align: center;
+}
+
+/* Banner contactame  */
+
+.contactme {
+  height: 400px;
+  background-color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+.highlight {
+  color: #0bd;
+}
+
+.button-cm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.button-cm button:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.button-cm button {
+  width: 170px;
+  height: 170px;
+  border: none;
+  background-color: transparent;
+  padding: 0;
+  margin: 0 30px;
+  /* invertir colores */
+  filter: invert(100%);
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.button-cm img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
